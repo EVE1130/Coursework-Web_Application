@@ -1,0 +1,120 @@
+body{
+    font-family: 'Venus Rising', sans-serif;                                            
+    margin: 0;   
+    padding: 0;
+    height:100%;
+    background: rgb(243, 243, 243);
+    color: #000000;                              
+}
+
+#ward_banner{
+    display: flex;
+    flex-direction: column;
+    height:40vh;
+    align-items: center;
+    justify-content: center;
+    background: url('../picturecol/ward.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    margin-bottom: 10px;
+}
+
+
+#mark form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+#mark input[type="submit"] {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 30px; 
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px; 
+    font-family: 'Venus Rising', sans-serif;
+    background-color: transparent;
+    box-shadow: 0 -1px -3px rgba(0,0,0,0.12), 0 -1px -2px rgba(0,0,0,0.24);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex: 2;
+}
+
+.product {
+    position: relative;
+    max-width: 300px;
+    margin: 10px;
+    max-height: 300px;
+}
+
+.product img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product p, .product span{
+    position: absolute;
+    text-align: left;
+    visibility: hidden;
+    padding:0;
+    color: white;
+}
+
+.product #fa-solid #fa-heart{
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    color: #ca0000;
+    visibility: hidden;
+}
+
+.product_name{
+    top:0;
+    left: 5%;
+}
+
+.product_brand, .discount{
+    font-size: 12px;
+    color: #b1b1b1;
+}
+
+.product_price{
+    bottom: 0;
+    left: 5%;
+}
+
+.product:hover p ,.product:hover span, .product:hover #fa-solid #fa-heart{
+    visibility: visible;
+}
+
+/* Overlay effect */
+.product::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* half-transparent overlay */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.product:hover::before {
+    opacity: 1;
+}

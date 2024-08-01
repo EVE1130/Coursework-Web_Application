@@ -1,0 +1,80 @@
+body{
+	background-color:#D4D4D4;
+    margin: 0;
+    padding: 0;
+    font-family: 'Venus Rising', sans-serif;
+}
+
+.cart-view-table{
+    padding-top: 100px;
+    padding: 50px;
+    width: auto;
+}
+
+.cart-view-table-front h3{
+    font-size: x-large;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table thead th {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: left;
+}
+
+.cart-row {
+    height:auto;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.button:hover,
+.cart-row:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.cart-item {
+    padding: 6px;
+    text-align: left;
+}
+
+.cart-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.button {
+    background: transparent; 
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-family: 'Venus Rising', sans-serif;
+}
+
+#adddelItem {
+	font-size:17px;
+}
+
+tbody{
+	text-align:right;
+}
+
+#endingT {
+	background-color: transparent;
+}

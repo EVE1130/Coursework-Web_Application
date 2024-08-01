@@ -1,0 +1,60 @@
+body{
+    font-family: 'Venus Rising', sans-serif;                                            
+    margin: 0;   
+    padding: 0;
+    height:100%;
+    color: rgb(243, 243, 243);    
+    background-color: black;                          
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;  
+}
+
+#show_banner{
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    background: url('../picturecol/Digital_Fashion.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+#show_collab{
+    height:100vh;
+    align-items: left;
+    line-height: 2.0;
+    padding-left: 100px;
+    top: 50%;
+    background: url('../picturecol/laser1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    
+}
+
+#show_detail{
+    height:100vh;
+    align-items: right;
+    justify-content: right;
+    background: url('../picturecol/show_banner2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+#passed_show{
+    margin:20px;
+}
+
+#passed_show iframe {
+    display: block;
+    width: 100%;
+    min-height: 500px;
+    margin: auto;
+}

@@ -1,0 +1,104 @@
+
+body {
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: 'Venus rising', sains-serif;
+}
+
+/*main page style*/
+.bg-main{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    line-height: 2.0;
+    background-image: url('../picturecol/home_banner.png');
+    font-size:x-large;
+}
+
+.bg-main a{
+    text-decoration: none;
+    color: black; 
+    background: #bfbfbf50; 
+    padding: 5px;
+    box-sizing: border-box;
+    width:fit-content;
+    display:block;
+}
+
+.bg-second{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../picturecol/Show_banner.jpg');
+    height:100vh;
+    padding: 100px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+    text-decoration: none;
+    color:white;
+    line-height: 2.0;
+    font-size: x-large;
+}
+
+.bg-second a{
+    text-decoration: none;
+    color:white;
+    background: #bfbfbf50; 
+    padding: 5px;
+    box-sizing: border-box;
+    width:fit-content;
+}
+
+.bg-third {
+    font-size: 30px;
+    color:white;
+}
+
+.showcase-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex: 2;
+    text-decoration: none;
+}
+
+.showcase-grid a{
+    text-decoration: none;
+    color:white;
+}
+
+.showcase_pic {
+    position: relative;
+    min-width: 538px;
+    width:auto;
+    margin: 0;
+    min-height: 538px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.bg-main a:hover, .bg-second a:hover{
+    color:#fff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 8px #00a2ff;
+    background-color: black;
+}
+
+.showcase-grid a:hover{
+    background-color: rgba(0, 0, 0, 0.425);
+    background-blend-mode: overlay;
+}

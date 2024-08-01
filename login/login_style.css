@@ -1,0 +1,113 @@
+body{
+    font-family: 'Venus Rising', sans-serif;                                            
+    margin: 0;   
+    padding: 0;
+    height:100%;
+    background: rgb(0, 0, 0);                         
+}
+
+section {
+    display:flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: url('../picturecol/vrgirl2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+.register-container {
+    max-width: 1000px; 
+    min-width: 500px;
+    margin: 150px auto 100px;
+    padding: 30px 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: transparent; 
+    backdrop-filter: blur(20px);
+}
+
+.register-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px; 
+    color: rgb(255, 255, 255);
+    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black; /* Adjusted text-shadow */
+}
+
+.register-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.register-form input[type="email"],
+.register-form input[type="password"],
+.register-form input[type="text"], 
+.register-form select{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 30px; 
+    border: 2px solid #ccc; 
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px; 
+    font-family: 'Venus Rising', sans-serif;
+}
+
+.register-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(7, 7, 7);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Venus Rising', sans-serif; 
+}
+
+.register-form input[type="submit"]:hover {
+    color:#ffffff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 8px #00a2ff;
+    cursor: pointer; 
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px; 
+}
+
+.login-link a{
+text-decoration: none;
+color: #a8a8a8;
+}
+
+.login-link a:hover{
+    color:#ffffff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 8px #00a2ff;
+    cursor: pointer;
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 20px; 
+    font-size: 15px;
+}
+
+.success-message {
+    color: green;
+}
+
+.error-message {
+    color: red;
+}
